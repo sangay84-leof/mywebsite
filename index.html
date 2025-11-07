@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pragatix - Reviewing data for your protection. Secure data review and protection platform.">
+    <!-- <meta name="theme-color" content="#2563eb"> -->
+    <title>Pragatix - Data Protection & Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect width="32" height="32" rx="6" fill="#2563eb"/>
+                        <path d="M16 8L20 14H12L16 8Z" fill="white"/>
+                        <path d="M12 14L16 20L20 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 20V24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">Pragatix</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem" class="nav-link active">Home</a></li>
+                    <li role="none"><a href="#features" role="menuitem" class="nav-link">Features</a></li>
+                    <li role="none"><a href="#dashboard" role="menuitem" class="nav-link">Dashboard</a></li>
+                    <li role="none"><a href="#reviews" role="menuitem" class="nav-link">Reviews</a></li>
+                    <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+                    <!-- <li role="none"><a href="resigter.html" role="menuitem" class="nav-link">Register</a></li> -->
+                    <li role="none"><a href="login.html" role="menuitem" class="nav-link">Login</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-heading" class="hero-title">
+                    Reviewing Data for Your <span class="highlight">Protection</span>
+                </h1>
+                <p class="hero-description">
+                    Advanced data review and protection platform ensuring your information security 
+                    with intelligent monitoring and real-time threat detection.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" aria-label="Get started with Pragatix">
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary" aria-label="Learn more about Pragatix">
+                        Learn More
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Active Reviews</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99.9">0</div>
+                        <div class="stat-label">Uptime %</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Protected Systems</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-visualization">
+                    <div class="data-node" data-delay="0"></div>
+                    <div class="data-node" data-delay="0.2"></div>
+                    <div class="data-node" data-delay="0.4"></div>
+                    <div class="data-node" data-delay="0.6"></div>
+                    <div class="data-node" data-delay="0.8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" aria-labelledby="features-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="features-heading" class="section-title">Powerful Features</h2>
+                <p class="section-description">
+                    Everything you need to protect and review your data effectively
+                </p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card" tabindex="0">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time Monitoring</h3>
+                    <p class="feature-description">
+                        Continuous monitoring of your data streams with instant alerts for any anomalies or threats.
+                    </p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Advanced Encryption</h3>
+                    <p class="feature-description">
+                        Military-grade encryption protocols to ensure your data remains secure at all times.
+                    </p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Automated Reviews</h3>
+                    <p class="feature-description">
+                        AI-powered automated review system that learns and adapts to your specific data patterns.
+                    </p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-description">
+                        Seamless collaboration tools for your team to review and protect data together.
+                    </p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Analytics Dashboard</h3>
+                    <p class="feature-description">
+                        Comprehensive analytics and insights into your data protection metrics and trends.
+                    </p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Compliance Ready</h3>
+                    <p class="feature-description">
+                        Built-in compliance tools for GDPR, HIPAA, and other regulatory requirements.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard" aria-labelledby="dashboard-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="dashboard-heading" class="section-title">Dashboard</h2>
+                <p class="section-description">
+                    Monitor your data protection status in real-time
+                </p>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h3 class="dashboard-card-title">System Status</h3>
+                        <span class="status-badge status-active">Active</span>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <div class="status-indicator">
+                            <div class="status-circle status-online"></div>
+                            <span>All systems operational</span>
+                        </div>
+                        <div class="metric-list">
+                            <div class="metric-item">
+                                <span class="metric-label">CPU Usage</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="45"></div>
+                                </div>
+                                <span class="metric-value">45%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Memory</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="62"></div>
+                                </div>
+                                <span class="metric-value">62%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Network</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="38"></div>
+                                </div>
+                                <span class="metric-value">38%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h3 class="dashboard-card-title">Recent Activity</h3>
+                        <button class="btn-icon" aria-label="View all activity">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <div class="activity-list" id="activity-list">
+                            <!-- Activity items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h3 class="dashboard-card-title">Threat Detection</h3>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <div class="threat-stats">
+                            <div class="threat-stat">
+                                <div class="threat-number">0</div>
+                                <div class="threat-label">Active Threats</div>
+                            </div>
+                            <div class="threat-stat">
+                                <div class="threat-number">127</div>
+                                <div class="threat-label">Blocked Today</div>
+                            </div>
+                        </div>
+                        <div class="threat-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-time">2 min ago</div>
+                                    <div class="timeline-text">Suspicious activity blocked</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-time">15 min ago</div>
+                                    <div class="timeline-text">Data review completed</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-time">1 hour ago</div>
+                                    <div class="timeline-text">System backup successful</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews" aria-labelledby="reviews-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="reviews-heading" class="section-title">Data Reviews</h2>
+                <p class="section-description">
+                    Manage and track your data review processes
+                </p>
+            </div>
+            <div class="reviews-controls">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="search" id="review-search" placeholder="Search reviews..." aria-label="Search reviews">
+                </div>
+                <div class="filter-group">
+                    <select id="status-filter" aria-label="Filter by status" class="filter-select">
+                        <option value="all">All Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                        <option value="flagged">Flagged</option>
+                    </select>
+                    <button class="btn btn-primary" id="new-review-btn" aria-label="Create new review">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        New Review
+                    </button>
+                </div>
+            </div>
+            <div class="reviews-table-container">
+                <table class="reviews-table" role="table" aria-label="Data reviews">
+                    <thead>
+                        <tr>
+                            <th>Review ID</th>
+                            <th>Data Source</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th>Created</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reviews-tbody">
+                        <!-- Reviews will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination" id="pagination" role="navigation" aria-label="Pagination">
+                <!-- Pagination will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 id="about-heading" class="section-title">About Pragatix</h2>
+                    <p>
+                        Pragatix is a cutting-edge data protection and review platform designed to help 
+                        organizations safeguard their critical information. Our mission is to provide 
+                        comprehensive data security solutions that are both powerful and easy to use.
+                    </p>
+                    <p>
+                        With advanced monitoring capabilities, automated threat detection, and intelligent 
+                        review systems, Pragatix ensures your data remains protected around the clock. 
+                        We combine state-of-the-art technology with user-friendly interfaces to deliver 
+                        enterprise-grade security for businesses of all sizes.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <strong>24/7 Monitoring</strong>
+                            <p>Continuous protection with no downtime</p>
+                        </div>
+                        <div class="about-feature">
+                            <strong>Enterprise Security</strong>
+                            <p>Bank-level encryption and security protocols</p>
+                        </div>
+                        <div class="about-feature">
+                            <strong>Scalable Solutions</strong>
+                            <p>Grows with your business needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="security-badge">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        <div class="badge-text">Secure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect width="32" height="32" rx="6" fill="#2563eb"/>
+                            <path d="M16 8L20 14H12L16 8Z" fill="white"/>
+                            <path d="M12 14L16 20L20 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 20V24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">Pragatix</span>
+                    </div>
+                    <p class="footer-description">
+                        Reviewing data for your protection. Advanced security solutions for modern businesses.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pragatix. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for New Review -->
+    <div class="modal" id="review-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title" class="modal-title">Create New Review</h3>
+                <button class="modal-close" aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="review-form">
+                <div class="form-group">
+                    <label for="data-source">Data Source</label>
+                    <input type="text" id="data-source" name="data-source" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority" required aria-required="true">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                        <option value="critical">Critical</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4" aria-required="false"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-review">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Create Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

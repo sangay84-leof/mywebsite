@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            padding: 40px 30px;
+            transition: all 0.4s ease;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #2575fc;
+        }
+
+        button {
+            width: 100%;
+            background: #2575fc;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1b5fd1;
+        }
+
+        .toggle-text {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .toggle-text a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Register Form -->
+        <div id="registerForm">
+            <h2>Create Account</h2>
+            <div class="form-group">
+                <label for="regName">Name</label>
+                <input type="text" id="regName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="regEmail">Email Address</label>
+                <input type="email" id="regEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" placeholder="Enter your password">
+            </div>
+            <!-- <div class="form-group">
+                <label for="regConfirm">Confirm Password</label>
+                <input type="password" id="regConfirm" placeholder="Confirm your password">
+            </div> -->
+            <button onclick="register()">Register</button>
+            <p class="toggle-text">Already have an account? <a onclick="showLogin()">Login</a></p>
+            <p class="message" id="regMsg"></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" class="hidden">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+            </div>
+            <button onclick="login()">Login</button>
+            <p class="toggle-text">Don't have an account? <a onclick="showRegister()">Register</a></p>
+            <p class="message" id="loginMsg"></p>
+        </div>
+    </div>
+
+    <script>
+        const registerForm = document.getElementById("registerForm");
+        const loginForm = document.getElementById("loginForm");
+
+        function showLogin() {
+            registerForm.classList.add("hidden");
+            loginForm.classList.remove("hidden");
+        }
+
+        function showRegister() {
+            loginForm.classList.add("hidden");
+            registerForm.classList.remove("hidden");
+        }
+
+        function register() {
+            const name = document.getElementById('regName').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
+            const pass = document.getElementById('regPassword').value;
+            const confirm = document.getElementById('regConfirm').value;
+            const msg = document.getElementById('regMsg');
+
+            if (!name || !email || !pass || !confirm) {
+                msg.textContent = "Please fill all fields.";
+                msg.className = "message error";
+                return;
+            }
+
+            if (pass !== confirm) {
+                msg.textContent = "Passwords do not match.";
+                msg.className = "message error";
+                return;
+            }
+
+            msg.textContent = "Registration successful!";
+            msg.className = "message success";
+            console.log({ name, email, pass });
+        }
+
+        function login() {
+            const email = document.getElementById('loginEmail').value.trim();
+            const pass = document.getElementById('loginPassword').value;
+            const msg = document.getElementById('loginMsg');
+
+            if (!email || !pass) {
+                msg.textContent = "Please enter both email and password.";
+                msg.className = "message error";
+                return;
+            }
+
+            msg.textContent = "Login successful!";
+            msg.className = "message success";
+            console.log({ email, pass });
+        }
+    </script>
+</body>
+
+</html>
